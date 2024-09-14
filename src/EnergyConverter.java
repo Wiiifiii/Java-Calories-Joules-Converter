@@ -16,7 +16,7 @@ public class EnergyConverter {
         System.out.println("1. Convert Joules to Calories");
         System.out.println("2. Convert Calories to Joules");
         System.out.println("3. Exit");
-        System.out.print("Choose an option (1-3): ");
+        System.out.print("\nChoose an option (1-3): ");
         int choice = scan.nextInt();
       
         return choice;

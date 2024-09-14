@@ -20,7 +20,7 @@ public class EnergyConverterTest {
                     break;
                 case 3:
                     System.out.println("Exiting the program. Thank you bye!");
-                    running = false; // Stop the program
+                    running = false; // exit the loop and end the program.
                     break;
                 default:
                     System.out.println("Invalid choice. Please choose 1, 2, or 3.");
