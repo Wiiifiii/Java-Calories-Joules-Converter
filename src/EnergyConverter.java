@@ -5,11 +5,11 @@ import java.util.Scanner;
 */
 public class EnergyConverter {
 
-    // UnitConverters factors for Joules and Calories
-    public static final double J_TO_CAL = 0.2390;
-    public static final double CAL_TO_J = 4.184;
+// UnitConverters factors for Joules and Calories
+    public static final double J_TO_CAL = 0.2390; // constant value
+    public static final double CAL_TO_J = 4.184; // constant value
 
-    // Method to display the menu and get the user's choice between 1-3// HUOM! string input throw Exception
+// Method to display the menu and get the user's choice between 1-3// NOTE! string input throw Exception.
     public int getMenuChoice() {
         Scanner scan = new Scanner(System.in);
         System.out.println("*** Convert J to cal Menu ***");
@@ -18,7 +18,7 @@ public class EnergyConverter {
         System.out.println("3. Exit");
         System.out.print("Choose an option (1-3): ");
         int choice = scan.nextInt();
-       // scan.close();
+      
         return choice;
     }
     
@@ -29,7 +29,7 @@ public class EnergyConverter {
         double joules = scan.nextDouble();
         double calories = joules * J_TO_CAL;
         System.out.printf("%.2f Joules is equal to %.2f Calories\n", joules, calories);
-       // scan.close();
+       
     }
     
     // Method to convert calories to joules
@@ -39,6 +39,6 @@ public class EnergyConverter {
         double calories = scan.nextDouble();
         double joules = calories * CAL_TO_J;
         System.out.printf("%.2f Calories is equal to %.2f Joules\n", calories, joules);
-       // scan.close();
-    }
+      
+}
 }

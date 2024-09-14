@@ -10,7 +10,7 @@ public class EnergyConverterTest {
         while (running) {
             int choice = converter.getMenuChoice();
 
-            // Use switch structure to handle user input
+        // Use switch structure to handle user input
             switch (choice) {
                 case 1:
                     converter.convertJoulesToCalories(); // Convert Joules to Calories
