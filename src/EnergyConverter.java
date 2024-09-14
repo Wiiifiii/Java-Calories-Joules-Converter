@@ -12,11 +12,11 @@ public class EnergyConverter {
 // Method to display the menu and get the user's choice between 1-3// NOTE! string input throw Exception.
     public int getMenuChoice() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("*** Convert J to cal Menu ***");
+        System.out.println("\n*** Convert J to cal Menu ***");
         System.out.println("1. Convert Joules to Calories");
         System.out.println("2. Convert Calories to Joules");
         System.out.println("3. Exit");
-        System.out.print("\nChoose an option (1-3): ");
+        System.out.print("\nChoose an option (1-3): \n");
         int choice = scan.nextInt();
       
         return choice;
@@ -25,20 +25,20 @@ public class EnergyConverter {
     // Method to convert joules to calories
     public void convertJoulesToCalories() {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter energy in Joules: ");
+        System.out.print("Enter energy in Joules: \n");
         double joules = scan.nextDouble();
         double calories = joules * J_TO_CAL;
-        System.out.printf("%.2f Joules is equal to %.2f Calories\n", joules, calories);
+        System.out.printf("\n%.2f Joules is equal to %.2f Calories\n", joules, calories);
        
     }
     
     // Method to convert calories to joules
     public void convertCaloriesToJoules() {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter energy in Calories: ");
+        System.out.print("Enter energy in Calories: \n");
         double calories = scan.nextDouble();
         double joules = calories * CAL_TO_J;
-        System.out.printf("%.2f Calories is equal to %.2f Joules\n", calories, joules);
+        System.out.printf("\n%.2f Calories is equal to %.2f Joules\n", calories, joules);
       
 }
 }
