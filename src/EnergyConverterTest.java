@@ -1,5 +1,3 @@
-
-
 public class EnergyConverterTest {
     public static void main(String[] args) {
         // Create an instance of the EnergyConverter class
