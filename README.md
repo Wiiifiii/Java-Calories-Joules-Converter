@@ -1,6 +1,4 @@
-# Owner avatar
-Java-Calories-Joules-Converter
-
+# Java-Calories-Joules-Converter
 
 This Java program converts between calories and joules based on user input. It uses constants and a switch menu to handle conversions. The user can choose to convert calories to joules or joules to calories and repeat or exit.
 
